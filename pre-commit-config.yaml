@@ -1,0 +1,13 @@
+# 라이선스/비밀키 커밋 차단 — .gitignore를 보완하는 기계적 방어막.
+# Windows 호환성을 위해 bash 대신 Python 훅을 사용한다.
+# 최초 1회:
+#   pip install pre-commit
+#   pre-commit install
+repos:
+  - repo: local
+    hooks:
+      - id: block-restricted-data
+        name: 재배포 금지 데이터/비밀 커밋 차단
+        entry: python scripts/check_restricted_commit.py
+        language: system
+        pass_filenames: false

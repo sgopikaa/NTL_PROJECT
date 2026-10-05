@@ -1,0 +1,50 @@
+NTL Disaster Recovery Prediction — Data Sources & Attribution
+=============================================================
+
+This project uses third-party datasets. When publishing figures, maps, tables,
+or reports derived from them, retain the attributions below.
+
+-------------------------------------------------------------------------------
+1. VIIRS DNB Monthly Nighttime Lights
+-------------------------------------------------------------------------------
+   Source : NOAA/NASA VIIRS Day/Night Band, collection
+            NOAA/VIIRS/DNB/MONTHLY_V1/VCMSLCFG via Google Earth Engine
+   Usage  : avg_rad and cf_cvg bands for nighttime-light recovery analysis
+   Note   : Accessed through Google Earth Engine.
+
+-------------------------------------------------------------------------------
+2. FAO GAUL 2015 Level-2 Administrative Boundaries
+-------------------------------------------------------------------------------
+   Source : FAO GAUL 2015, dataset FAO/GAUL/2015/level2 via Google Earth Engine
+   Usage  : district boundaries for spatial aggregation and maps
+   Note   : Attribute FAO GAUL on maps and reports.
+
+-------------------------------------------------------------------------------
+3. WorldPop Population
+-------------------------------------------------------------------------------
+   Source : WorldPop population layers via Google Earth Engine
+   Usage  : district-level population and population-density features
+   Note   : Check current dataset terms before formal publication.
+
+-------------------------------------------------------------------------------
+4. GHSL Built-up Surface
+-------------------------------------------------------------------------------
+   Source : Global Human Settlement Layer via Google Earth Engine
+   Usage  : built-up surface and built-up ratio features
+   Note   : Check current dataset terms before formal publication.
+
+-------------------------------------------------------------------------------
+5. Google Earth Engine
+-------------------------------------------------------------------------------
+   Terms  : Google Earth Engine Terms of Service
+   Usage  : remote sensing data access, aggregation, and Drive export tasks
+
+-------------------------------------------------------------------------------
+Current scope
+-------------------------------------------------------------------------------
+The clean core pipeline intentionally excludes OpenStreetMap power-grid features,
+Census slum-ratio data, and PLFS/income proxy data. Those sources may be added
+later as optional extensions, but they are not required for the current
+multi-disaster scalable NTL recovery prediction workflow.
+
+Verify each dataset's current terms before formal publication.

@@ -1,0 +1,86 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# Environment variables / credentials
+.env
+.env.*
+!.env.example
+
+# Jupyter
+.ipynb_checkpoints/
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Data directories
+# Do not commit raw GEE exports, intermediate files, or generated processed data.
+data/raw/*
+data/interim/*
+data/processed/*
+
+# Keep directory structure
+!data/raw/.gitkeep
+!data/interim/.gitkeep
+!data/processed/.gitkeep
+
+# Allow small project metadata/event config if needed
+!data/raw/events.csv
+
+# Outputs are reproducible; avoid committing by default.
+outputs/figures/*
+outputs/tables/*
+
+!outputs/figures/.gitkeep
+!outputs/tables/.gitkeep
+
+# Geo data can be large and/or license-sensitive.
+*.shp
+*.shx
+*.dbf
+*.prj
+*.cpg
+*.gpkg
+*.geojson
+*.tif
+*.tiff
+
+# P0 external data — license-restricted / redistribution-sensitive (see NOTICE).
+# OpenStreetMap raw + OSM-derived tables (ODbL share-alike): keep out of the repo
+# so only figures/reports (Produced Works) are published.
+*.osm
+*.osm.pbf
+*.pbf
+data/**/osm_*
+data/**/*grid_density*
+# Census 2011 / PLFS raw files (GODL-India: attribute source, do not redistribute raw)
+data/**/census*
+data/**/*slum*
+data/**/plfs*
+
+# Allow documentation images only if you manually place them under docs/assets.
+!docs/assets/*.png
+!docs/assets/*.jpg
+!docs/assets/*.jpeg
+!docs/assets/*.webp
+
+# Logs
+*.log
+
+# Local cleanup/package artifacts
+files/
+APPLY_CLEANUP.md
+DELETE_FILES.txt
+*.zip
